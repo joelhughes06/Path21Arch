@@ -1,0 +1,16 @@
+<%= render 'shared/top_menu' %>
+<div class='well'>
+
+<%= form_tag '/user_login_21' do %>
+	<div class='control-group'>
+		<%= label_tag :username %>
+		<%= text_field_tag :username %>
+	</div>
+
+	<div class='control-group'>
+		<%= label_tag :password %>
+		<%= password_field_tag :password %>
+	</div>
+	<%= submit_tag 'Login', class: 'btn btn-success' %>
+	<% end %>
+</div>
